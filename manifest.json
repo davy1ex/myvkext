@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "vkext",
+    "version": "1.0",
+   
+    "description": "for extend vk functions",
+    "icons": {
+      "48": "icons/logo.png"
+    },
+  
+    "applications": {
+      "gecko": {
+        "id": "borderify@mozilla.org",
+        "strict_min_version": "45.0"
+      }
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://vk.com/im"],
+        "js": ["main.js"]
+      }
+    ]
+  
+  }
